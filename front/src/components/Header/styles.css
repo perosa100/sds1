@@ -1,6 +1,6 @@
 .main-header {
   height: 30px;
-  padding: 20px 40px;
+  padding: 30px 30px;
   display: flex;
   background-color: var(--color-darkslategray);
 }
@@ -8,7 +8,6 @@
 .logo-text {
   font-weight: bold;
   font-size: 24px;
-  margin-left: 15px;
   display: flex;
 }
 
@@ -19,7 +18,7 @@
 
 .logo-text-2 {
   color: #fff;
-  padding-bottom: 100px;
+
   padding-left: 10px;
 }
 

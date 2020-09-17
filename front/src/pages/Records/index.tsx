@@ -5,7 +5,7 @@ import { RecordsResponse } from './types'
 import api from './../../config/api'
 import { formatDate } from './helpers'
 import Pagination from './Pagination/index'
-import { Link } from 'react-router-dom'
+import Filters from './../../components/Filters/index'
 
 const Records: React.FC = () => {
   const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>()
@@ -14,6 +14,7 @@ const Records: React.FC = () => {
   useEffect(() => {
     api.get(`records?linesPerPage=12&page=${activePage}`).then((response) => {
       setRecordsResponse(response.data)
+      console.log(response.data)
     })
   }, [activePage])
 
@@ -23,11 +24,7 @@ const Records: React.FC = () => {
 
   return (
     <div className="page-container">
-      <div className="filters-container records-actions">
-        <Link to="/charts">
-          <button className="action-filters">Ver Gráfico</button>
-        </Link>
-      </div>
+      <Filters link="/charts" linkText="Ver Gráfico" />
 
       <table className="records-table" cellPadding="0" cellSpacing="0">
         <thead>

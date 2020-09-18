@@ -8,6 +8,12 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center'
   },
+
+  header1: {
+    height: 90,
+    flexDirection: 'row',
+    justifyContent: 'center'
+  },
   textLogo1: {
     fontWeight: 'bold',
     fontSize: 18,

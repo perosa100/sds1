@@ -9,8 +9,8 @@ import {
   Play_400Regular,
   Play_700Bold
 } from '@expo-google-fonts/play'
-import Home from './src/pages/Home'
-import Header from './src/components/Header/index'
+
+import Routes from './src/routes'
 
 export default function App() {
   let [fontsLoader] = useFonts({
@@ -25,8 +25,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <Header />
-      <Home />
+      <Routes />
     </View>
   )
 }

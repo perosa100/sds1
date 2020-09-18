@@ -6,11 +6,20 @@ import gamerImg from '../../assets/gamer.png'
 import { RectButton } from 'react-native-gesture-handler'
 
 import { FontAwesome as Icon } from '@expo/vector-icons'
+import Header from './../../components/Header/index'
+import { useNavigation } from '@react-navigation/native'
+
 const Home: React.FC = () => {
-  const handleOnPress = () => {}
+  const navigation = useNavigation()
+
+  const handleOnPress = () => {
+    navigation.navigate('CreateRecord')
+  }
 
   return (
     <>
+      <Header />
+
       <View style={styles.container}>
         <Image style={styles.gamerImage} source={gamerImg} />
         <Text style={styles.title}>Vote agora</Text>
@@ -18,7 +27,12 @@ const Home: React.FC = () => {
       </View>
 
       <View style={styles.footer}>
-        <RectButton style={styles.button} onPress={handleOnPress()}>
+        <RectButton
+          style={styles.button}
+          onPress={() => {
+            handleOnPress()
+          }}
+        >
           <Text style={styles.buttonText}>Colegar Dados</Text>
           <View style={styles.buttonIcon}>
             <Text>

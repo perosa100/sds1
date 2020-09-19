@@ -40,5 +40,55 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 18,
     color: '#0B1F34'
+  },
+  platformCard: {
+    paddingTop: 30,
+    paddingBottom: 20,
+    width: '30%',
+    backgroundColor: '#FFF',
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  platformCardText: {
+    marginTop: 40,
+    color: '#9E9E9E',
+    fontSize: 24,
+    fontFamily: 'Play_700Bold',
+    textAlign: 'center'
+  }
+})
+
+export const stylesPicker = StyleSheet.create({
+  inputAndroid: {
+    fontSize: 16,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    backgroundColor: '#FFF',
+    borderRadius: 20,
+    color: '#ED7947',
+    paddingRight: 30,
+    fontFamily: 'Play_700Bold',
+    height: 50
+  },
+  inputIOS: {
+    fontSize: 16,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    backgroundColor: '#FFF',
+    borderRadius: 20,
+    color: '#ED7947',
+    paddingRight: 30,
+    fontFamily: 'Play_700Bold',
+    height: 50
+  },
+  placeholder: {
+    color: '#9E9E9E',
+    fontSize: 16,
+    fontFamily: 'Play_700Bold'
+  },
+  iconContainer: {
+    top: 10,
+    right: 12
   }
 })
